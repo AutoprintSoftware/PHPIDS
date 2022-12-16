@@ -202,7 +202,7 @@ class Event implements \Countable, \IteratorAggregate
      *
      * @return integer
      */
-    public function count()
+    public function count(): int
     {
         return count($this->getFilters());
     }
@@ -214,7 +214,7 @@ class Event implements \Countable, \IteratorAggregate
      *
      * @return \Iterator the filter collection
      */
-    public function getIterator()
+    public function getIterator() : \Traversable
     {
         return new \ArrayIterator($this->getFilters());
     }
