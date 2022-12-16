@@ -199,7 +199,7 @@ class Report implements \Countable, \IteratorAggregate
      *
      * @return integer
      */
-    public function count()
+    public function count(): int
     {
         return count($this->events);
     }
@@ -213,7 +213,7 @@ class Report implements \Countable, \IteratorAggregate
      *
      * @return \Iterator the event collection
      */
-    public function getIterator()
+    public function getIterator(): \Traversable
     {
         return new \ArrayIterator($this->events);
     }
