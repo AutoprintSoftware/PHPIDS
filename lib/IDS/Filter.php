@@ -48,6 +48,7 @@ namespace IDS;
  * @link      http://php-ids.org/
  * @since     Version 0.4
  */
+#[AllowDynamicProperties]
 class Filter
 {
     /**
