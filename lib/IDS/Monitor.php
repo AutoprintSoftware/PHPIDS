@@ -49,6 +49,7 @@ use IDS\Filter\Storage;
  * @license   http://www.gnu.org/licenses/lgpl.html LGPL
  * @link      http://php-ids.org/
  */
+#[\AllowDynamicProperties]
 class Monitor
 {
     /**
