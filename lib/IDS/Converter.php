@@ -50,6 +50,9 @@
 
 namespace IDS;
 
+/**
+ *
+ */
 class Converter
 {
     /**
@@ -152,7 +155,7 @@ class Converter
             foreach ($charcode as $char) {
                 $char = preg_replace('/\W0/s', '', $char);
 
-                if (preg_match_all('/\d*[+-\/\* ]\d+/', $char, $matches)) {
+                if (preg_match_all('/\d*[\+\-\/\* ]\d+/', $char, $matches)) {
                     $match = preg_split('/(\W?\d+)/', implode('', $matches[0] ?? ''), -1, PREG_SPLIT_DELIM_CAPTURE);
 
                     if (array_sum($match) >= 20 && array_sum($match) <= 127) {
